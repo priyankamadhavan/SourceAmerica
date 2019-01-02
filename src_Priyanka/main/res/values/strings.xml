@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SourceAmerica1</string>
+    <string-array name="tasks">
+        <item> Stopwatch </item>
+        <item> task 2 </item>
+        <item> task 3 </item>
+    </string-array>
+</resources>
