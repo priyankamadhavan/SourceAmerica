@@ -10,10 +10,11 @@
         android:id="@+id/trophiesLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/trophies"
+        android:layout_marginTop="80dp"
+        android:text="Trophies"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,10 +55,12 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/trophiesLabel"
-        android:layout_marginLeft="400sp"
+        android:layout_marginLeft="500sp"
         android:text="Home"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/trophiesLabel"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+
 
 </android.support.constraint.ConstraintLayout>
