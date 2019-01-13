@@ -1,4 +1,4 @@
-package com.example.priyankamadhavan.sourceamerica1;
+package com.example.priyankamadhavan.motivateme;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ public class Dropdown extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dropdown);
 
-        Spinner spinner = findViewById(R.id.spinner1);
+        Spinner spinner = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tasks, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -41,7 +41,6 @@ public class Dropdown extends AppCompatActivity implements AdapterView.OnItemSel
                 openTimer();
             }
         });
-
 
        /* ignore this omg showDialog = (Button) findViewById(R.id.newtask);
         showDialog.setOnClickListener(new View.OnClickListener(){

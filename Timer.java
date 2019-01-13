@@ -1,4 +1,4 @@
-package com.example.priyankamadhavan.sourceamerica1;
+package com.example.priyankamadhavan.motivateme;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,7 +40,7 @@ public class Timer extends AppCompatActivity {
     public void stopChronometer(View v){
         chronometer.stop();
         double time = SystemClock.elapsedRealtime() - chronometer.getBase();
-        baseline = 5000;
+        baseline = 180000;
         if (time < baseline) {
             Intent intent = new Intent(this, Success.class);
             startActivity(intent);

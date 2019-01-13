@@ -1,4 +1,4 @@
-package com.example.priyankamadhavan.sourceamerica1;
+package com.example.priyankamadhavan.motivateme;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +29,4 @@ public class Instructions extends AppCompatActivity {
     }
 
 }
-
-
 

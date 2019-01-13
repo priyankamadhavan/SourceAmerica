@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Level">
 
-
     <TextView
         android:id="@+id/pointsLabel"
         android:layout_width="218dp"
@@ -14,10 +13,9 @@
         android:gravity="center"
         android:text="100 points"
         android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/pointsVar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/pointsVar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
@@ -25,39 +23,35 @@
         android:id="@+id/levelLabel"
         android:layout_width="70dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
         android:gravity="center"
-        android:text="level"
+        android:text="Level"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/pointsVar"
-        app:layout_constraintEnd_toStartOf="@+id/levelVar"
-        app:layout_constraintHorizontal_bias="0.453"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.616" />
 
     <TextView
         android:id="@+id/levelVar"
-        android:layout_width="137dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="20dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/levelLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="___"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616"
+        tools:layout_editor_absoluteX="203dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="202dp"
         android:layout_height="206dp"
-        app:layout_constraintBottom_toTopOf="@+id/pointsLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelVar" />
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <TextView
         android:id="@+id/pointsVar"
@@ -67,5 +61,20 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="463dp" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:width="100dp"
+        android:height="60dp"
+        android:text="Home"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="2dp" />
+
 
 </android.support.constraint.ConstraintLayout>

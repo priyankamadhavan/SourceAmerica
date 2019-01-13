@@ -58,9 +58,9 @@
         android:layout_marginLeft="500sp"
         android:text="Home"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintLeft_toRightOf="@id/trophiesLabel"
         app:layout_constraintRight_toLeftOf="parent"
-        tools:layout_editor_absoluteY="3dp" />
-
+        tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>
