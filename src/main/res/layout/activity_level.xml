@@ -6,59 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".Level">
 
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
 
     <TextView
-        android:id="@+id/pointsLabel"
-        android:layout_width="210dp"
-        android:layout_height="27dp"
-        android:text="@string/_100_points"
+        android:id="@+id/levelLabel"
+        android:layout_width="90dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Level"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:id="@+id/levelVar"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/levelLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="155dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/levelLabel"
-        android:layout_width="37dp"
-        android:layout_height="22dp"
-        android:text="@string/level"
-        app:layout_constraintBottom_toTopOf="@+id/pointsVar"
-        app:layout_constraintEnd_toStartOf="@+id/levelVar"
-        app:layout_constraintHorizontal_bias="0.453"
+        android:id="@+id/currentPointsVar"
+        android:layout_width="51dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.735" />
 
-    <EditText
-        android:id="@+id/levelVar"
+    <TextView
+        android:id="@+id/currentPointsLabel"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="104dp"
+        android:gravity="center"
+        android:text="points!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/leftPointsVar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toEndOf="@+id/currentPointsVar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/leftPointsVar"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentPointsVar"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <TextView
+        android:id="@+id/leftPointsLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        android:gravity="center"
+        android:text="points to next level!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/levelLabel"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173"
-        android:autofillHints="" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="202dp"
-        android:layout_height="206dp"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="138dp" />
-
-    <EditText
-        android:id="@+id/pointsVar"
-        android:layout_width="41dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="448dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/leftPointsVar"
+        app:layout_constraintTop_toBottomOf="@+id/currentPointsLabel"
+        app:layout_constraintVertical_bias="0.529" />
 
 </android.support.constraint.ConstraintLayout>
