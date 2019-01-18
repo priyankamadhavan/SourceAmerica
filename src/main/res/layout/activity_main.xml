@@ -39,10 +39,12 @@
         android:id="@+id/imageView"
         android:layout_width="135dp"
         android:layout_height="137dp"
+        android:src="@drawable/timer_icon"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:srcCompat="@drawable/timer_icon" />
 
 </android.support.constraint.ConstraintLayout>

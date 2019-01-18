@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ic.motivateme">
+    package="com.example.priyankamadhavan.motivateme">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/timer_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -18,12 +16,12 @@
         </activity>
         <activity android:name=".Dropdown" />
         <activity android:name=".Failure" />
+        <activity android:name=".Success" />
         <activity android:name=".Instructions" />
         <activity android:name=".StartScreen" />
-        <activity android:name=".Success" />
-        <activity android:name=".Timer" />
+        <activity android:name=".Level" />
         <activity android:name=".Trophies" />
-        <activity android:name=".Level"></activity>
+        <activity android:name=".Timer" />
     </application>
 
 </manifest>

@@ -38,13 +38,13 @@
 
     <TextView
         android:id="@+id/levelVar"
-        android:layout_width="76dp"
-        android:layout_height="34dp"
+        android:layout_width="77dp"
+        android:layout_height="46dp"
         android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toEndOf="@+id/levelLabel"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.236" />
@@ -57,63 +57,63 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
     <TextView
         android:id="@+id/currentPointsVar"
-        android:layout_width="51dp"
-        android:layout_height="39dp"
+        android:layout_width="54dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
         android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintVertical_bias="0.672" />
 
     <TextView
         android:id="@+id/currentPointsLabel"
-        android:layout_width="133dp"
+        android:layout_width="100dp"
         android:layout_height="53dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
         android:layout_marginBottom="104dp"
         android:gravity="center"
         android:text="points!"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/leftPointsVar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toEndOf="@+id/currentPointsVar"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/leftPointsVar"
-        android:layout_width="69dp"
-        android:layout_height="32dp"
+        android:layout_width="61dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentPointsVar"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.504" />
 
     <TextView
         android:id="@+id/leftPointsLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
         android:gravity="center"
         android:text="points to next level!"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/leftPointsVar"
         app:layout_constraintTop_toBottomOf="@+id/currentPointsLabel"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.551" />
 
 </android.support.constraint.ConstraintLayout>
