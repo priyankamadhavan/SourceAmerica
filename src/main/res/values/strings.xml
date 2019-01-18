@@ -1,2 +1,10 @@
 <resources>
+    <string name="app_name">MotivateMe</string>
+    <string name="item_array">SourceAmerica1</string>
+    <string-array name="tasks">
+        <item> Table </item>
+        <item> Window </item>
+        <item> Add a Task </item>
+    </string-array>
+
 </resources>

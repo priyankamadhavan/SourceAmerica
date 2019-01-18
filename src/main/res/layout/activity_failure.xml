@@ -41,7 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center_horizontal"
-        android:text="You didn't complete"
+        android:text="You didn't clean the"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/task"
         app:layout_constraintEnd_toEndOf="parent"
