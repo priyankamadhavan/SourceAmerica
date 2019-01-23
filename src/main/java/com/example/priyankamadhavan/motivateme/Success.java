@@ -23,7 +23,14 @@ public class Success extends AppCompatActivity implements TaskDialog.TaskDialogL
 
 
         TextView time = (TextView) findViewById(R.id.time);
-        time.setText("in " + Timer.getTime() / 1000 + " seconds" );
+        long currentTime = Timer.getTime() / 1000;
+        if (currentTime > 60) {
+            time.setText("in " + (int) currentTime / 60 + " minutes and " + currentTime % 60 + " seconds");
+        }
+        else{
+            time.setText("in " + currentTime + " seconds" );
+        }
+
 
         home = (Button) findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {

@@ -58,13 +58,13 @@ public class Dropdown extends AppCompatActivity implements TaskDialog.TaskDialog
         });
 
 
-        home = (Button) findViewById(R.id.home);
+        /*home = (Button) findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openStartScreen();
             }
-        });
+        });*/
 
         start = (Button) findViewById(R.id.start);
         start.setOnClickListener(new View.OnClickListener() {
@@ -82,10 +82,10 @@ public class Dropdown extends AppCompatActivity implements TaskDialog.TaskDialog
         startActivity(intent);
     }
 
-    public void openStartScreen(){
+   /* public void openStartScreen(){
         Intent intent = new Intent (this,StartScreen.class);
         startActivity(intent);
-    }
+    }*/
 
     public void openDialog(){
         TaskDialog taskDialog = new TaskDialog();

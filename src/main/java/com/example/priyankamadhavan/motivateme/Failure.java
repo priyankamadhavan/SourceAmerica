@@ -21,9 +21,17 @@ public class Failure extends AppCompatActivity {
 
         textViewTask.setText(Dropdown.getTask().toString());
 
-
         TextView time = (TextView) findViewById(R.id.time);
-        time.setText("under " + Timer.getBaseline() / 1000 + " seconds" );
+        double currentTime = Timer.getBaseline() / 1000;
+        if (currentTime > 60){
+            time.setText("under " + (int) currentTime / 60 + " minutes and " + currentTime % 60 + " seconds");
+        }
+        else{
+            time.setText("under " + currentTime + " seconds" );
+        }
+
+
+
 
         home = (Button) findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {

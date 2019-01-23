@@ -13,7 +13,7 @@ public class Timer extends AppCompatActivity implements TaskDialog.TaskDialogLis
     private Chronometer chronometer;
     private long pauseOffset;
     private boolean running;
-    public static long baseline = 5000;
+    public static long baseline = 600000;
     private String name;
     private static long time;
     private TextView textViewTask;
